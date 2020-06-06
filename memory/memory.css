@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+/* panel */
+section.panel {
+    height: 5vh;
+    background-color: grey;
+    display: flex;
+    justify-content: space-around;
+}
+
+section.panel button.start {
+    flex-basis: 25%;
+    padding: 0 5%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5vh;
+    background-color: white;
+    border: 2px solid black;
+}
+
+section.panel p.score {
+    flex-grow: 1;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    line-height: 5vh;
+    text-align: center;
+    font-size: 1.5vh;
+    background-color: #333;
+}
+
+p.yourScore {
+    position: absolute;
+    top: 8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+p.yourScore.active {
+    display: block;
+}
+
+/* gra */
+
+section.memory {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10vh auto;
+    height: 75vh;
+}
+
+section.memory div {
+    flex-basis: 33%;
+    height: 16.66%;
+    border: 2px solid #555;
+}
+
+@media (orientation: landscape) {
+    section.panel {
+        height: 10vh;
+    }
+
+    section.panel button.start {
+        font-size: 3vh;
+
+    }
+
+    section.panel p.score {
+        line-height: 10vh;
+        font-size: 3vh;
+    }
+
+    p.yourScore {
+        top: 12vh;
+    }
+
+    section.memory {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 10vh auto;
+        height: 70vh;
+    }
+
+    section.memory div {
+        flex-basis: 16.66%;
+        height: 33.4%;
+    }
+
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.brown {
+    background-color: brown;
+}
+
+.off {
+    background-color: #eee;
+}
+
+.hidden {
+    background-color: #000;
+}
