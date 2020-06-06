@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+
+/* panel */
+section.panel {
+    height: 5vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section.panel button.start {
+    flex-basis: 25%;
+    padding: 0 5%;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5vh;
+    background-color: white;
+    border: 2px solid black;
+}
+
+section.panel p.score {
+    flex-grow: 1;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    line-height: 5vh;
+    text-align: center;
+    font-size: 1.5vh;
+    background-color: #333;
+}
+
+
+/* game */
+.snake {
+    margin: 10vh 0 1vh;
+    text-align: center;
+}
+
+/* panel arrows */
+.arrows {
+    width: 130px;
+    height: 110px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.arrows div {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    box-shadow: 0 0 3px black;
+}
+
+.arrows div:hover {
+    background-color: black;
+    color: white;
+}
+
+.arrows .left {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.arrows .up {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.arrows .right {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.arrows .down {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media (orientation: landscape) {
+    section.panel {
+        height: 10vh;
+    }
+
+    section.panel button.start {
+        font-size: 3vh;
+
+    }
+
+    section.panel p.score {
+        line-height: 10vh;
+        font-size: 3vh;
+    }
+
+    .snake {
+        width: 60%;
+        margin: 5vh 0 0 10%;
+        float: left;
+    }
+
+    .arrows {
+        float: left;
+        margin: 15% 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .snake {
+        width: 100%;
+        text-align: center;
+        margin: 10% 0;
+    }
+
+    .arrows {
+        display: none;
+    }
+}

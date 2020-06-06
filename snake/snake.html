@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="snake.css">
+</head>
+
+<body>
+    <section class="panel">
+        <button class="start">Restart!</button>
+        <p class="score">
+            High Score: --
+        </p>
+    </section>
+    <section class="snake">
+        <canvas id="canvas" width="289" height="289"></canvas>
+    </section>
+    <section class="arrows">
+        <div class="left"><i class="fas fa-arrow-left"></i></div>
+        <div class="up"><i class="fas fa-arrow-up"></i></div>
+        <div class="right"><i class="fas fa-arrow-right"></i></div>
+        <div class="down"><i class="fas fa-arrow-down"></i></div>
+    </section>
+    <script src="snake.js"></script>
+</body>
+
+</html>
