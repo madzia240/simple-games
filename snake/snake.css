@@ -40,27 +40,27 @@ section.panel p.score {
 
 /* game */
 .snake {
-    margin: 10vh 0 1vh;
+    margin: 10vh 0 5vh;
     text-align: center;
 }
 
 /* panel arrows */
 .arrows {
-    width: 130px;
-    height: 110px;
+    width: 170px;
+    height: 165px;
     margin: 0 auto;
     position: relative;
 }
 
 .arrows div {
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border: 2px solid black;
     border-radius: 50%;
     text-align: center;
-    line-height: 40px;
-    font-size: 30px;
+    line-height: 55px;
+    font-size: 35px;
     box-shadow: 0 0 3px black;
 }
 

@@ -45,11 +45,8 @@ const clickCard = function () {
                             localStorage.setItem('highscore', totalTime);
                             yourScore.textContent = `New High Score: ${totalTime}s`;
                         }
-                    } else {
-                        localStorage.setItem('highscore', totalTime);
-                        yourScore.textContent = `Your Score: ${totalTime}s`;
                     }
-
+                    yourScore.textContent = `Your Score: ${totalTime}s`;
                     scoreTime.textContent = `High Score: ${localStorage.getItem('highscore')}s`;
                     startBtn.textContent = 'Again?';
                     startBtn.addEventListener('click', () => {
@@ -65,7 +62,7 @@ const clickCard = function () {
         activeCard = '';
         activeCards.length = 0;
         cards.forEach(card => card.addEventListener('click', clickCard));
-    }, 350)
+    }, 300)
 };
 const init = () => {
     startTime = new Date().getTime();

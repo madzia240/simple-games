@@ -17,7 +17,7 @@ var nextX = (nextY = 0);
 var defaultTailSize = 3;
 var tailSize = defaultTailSize;
 var snakeTrail = [];
-var snakeX = (snakeY = 10);
+var snakeX = (snakeY = 8);
 
 
 var appleX = (appleY = 15);
@@ -93,7 +93,8 @@ function draw() {
 
 
     canvasContext.fillStyle = 'white';
-    canvasContext.fillText("score: " + playerScore, 20, 20, );
+    canvasContext.font = '13px Arial';
+    canvasContext.fillText("score: " + playerScore, 10, 20, );
 
 
     snakeTrail.push({
@@ -105,7 +106,7 @@ function draw() {
     }
 
     canvasContext.fillStyle = "white";
-    canvasContext.fillText(startText, 100, 100);
+    canvasContext.fillText(startText, 80, 100);
 }
 
 
