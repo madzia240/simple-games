@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", cursive;
+}
+
+.wrap {
+    width: 60%;
+    margin: 15vh auto;
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 10vh;
+}
+
+.games ul {
+    list-style: none;
+}
+
+.games li {
+    padding: 5vh 0;
+}
+
+.games li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    height: 5vh;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+footer p.copy {
+    line-height: 5vh;
+}

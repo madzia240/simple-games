@@ -40,7 +40,7 @@ section.panel p.score {
 
 /* game */
 .snake {
-    margin: 10vh 0 5vh;
+    margin: 5vh 0 5vh;
     text-align: center;
 }
 
@@ -110,7 +110,7 @@ section.panel p.score {
 
     .snake {
         width: 60%;
-        margin: 5vh 0 0 10%;
+        margin: 2vh 0 0 10%;
         float: left;
     }
 
@@ -130,4 +130,19 @@ section.panel p.score {
     .arrows {
         display: none;
     }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    padding: 1vh;
+    text-decoration: none;
+    color: white;
 }

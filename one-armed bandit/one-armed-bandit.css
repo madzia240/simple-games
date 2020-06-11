@@ -1,102 +1,122 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Press Start 2P", cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Press Start 2P", cursive;
 }
 
 .wrap {
-  width: 85%;
-  margin: 10vh auto 0;
+    width: 85%;
+    margin: 5vh auto 0;
 }
 
 .game {
-  display: flex;
-  margin-bottom: 3vh;
+    display: flex;
+    margin-bottom: 3vh;
 }
 
 .game div {
-  height: 15vh;
-  flex-grow: 1;
-  margin: 10px;
-  border: 3px solid gray;
+    height: 15vh;
+    flex-grow: 1;
+    margin: 10px;
+    border: 3px solid gray;
 }
 
 .play {
-  text-align: center;
+    text-align: center;
 }
 
 .play input {
-  height: 45px;
-  font-size: 15px;
-  padding: 20px;
-  width: 90%;
-  border: 3px solid black;
-  text-align: center;
+    height: 45px;
+    font-size: 15px;
+    padding: 20px;
+    width: 90%;
+    border: 3px solid black;
+    text-align: center;
 }
 
 .play button {
-  width: 40%;
-  height: 45px;
-  margin-top: 10px;
-  text-align: center;
-  padding: 10px 0;
-  font-size: 10px;
-  text-transform: uppercase;
-  background-color: #333;
-  border: none;
-  color: white;
-  cursor: pointer;
-  letter-spacing: 6px;
+    width: 40%;
+    height: 45px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #333;
+    border: none;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 6px;
 }
 
 .panel {
-  margin: 30px 0 20px;
+    margin: 30px 0 20px;
 }
 
 .panel,
 .score {
-  font-size: 13px;
-  line-height: 30px;
+    font-size: 13px;
+    line-height: 30px;
 }
 
 .panel span,
 .score span {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .rules {
-  margin: 2vh 0 0;
-  padding: 2vh 1vh;
-  border: 2px solid black;
-  line-height: 15px;
+    margin: 2vh 0 0;
+    padding: 2vh 1vh;
+    border: 2px solid black;
+    line-height: 15px;
 }
 
 .rules h2 {
-  margin-bottom: 5px;
-  font-size: 15px;
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 
 .rules p {
-  font-size: 10px;
+    font-size: 10px;
 }
+
 @media (orientation: landscape) {
-  .wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  .first {
-    flex-basis: 40%;
-  }
-  .second {
-    flex-basis: 40%;
-    padding-left: 10%;
-  }
-  .panel {
-    margin: 3vh 0 0;
-  }
-  .rules {
-    flex-basis: 80%;
-  }
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .first {
+        flex-basis: 40%;
+    }
+
+    .second {
+        flex-basis: 40%;
+        padding-left: 10%;
+    }
+
+    .panel {
+        margin: 3vh 0 0;
+    }
+
+    .rules {
+        flex-basis: 80%;
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    padding: 1vh;
+    text-decoration: none;
+    color: white;
 }
