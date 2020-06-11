@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>one-armed bandit</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="one-armed-bandit.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="first">
+      <section class="game">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+      </section>
+
+      <section class="play">
+        <input type="number" placeholder="Your bet" id="bid">
+        <button id="start">Spin!</button>
+      </section>
+    </div>
+    <div class="second">
+      <section class="panel">Your wallet: <span class="wallet"></span>$</section>
+
+      <section class="score">
+        <span class="result"></span><br> Played games: <span class="number"></span><br>Wins: <span
+          class="win"></span><br>
+        Losses: <span class="loss"></span>
+      </section>
+    </div>
+    <section class="rules">
+      <h2>Rules:</h2>
+      <p>You win when 3 colors are the same or 3 colors are different.</p>
+    </section>
+
+  </div>
+  <script src="Wallet.js"></script>
+  <script src="Statistics.js"></script>
+  <script src="Draw.js"></script>
+  <script src="Result.js"></script>
+  <script src="Game.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

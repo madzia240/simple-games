@@ -45,6 +45,9 @@ const clickCard = function () {
                             localStorage.setItem('highscore', totalTime);
                             yourScore.textContent = `New High Score: ${totalTime}s`;
                         }
+
+                    } else {
+                        localStorage.setItem('highscore', totalTime);
                     }
                     yourScore.textContent = `Your Score: ${totalTime}s`;
                     scoreTime.textContent = `High Score: ${localStorage.getItem('highscore')}s`;

@@ -46,21 +46,21 @@ section.panel p.score {
 
 /* panel arrows */
 .arrows {
-    width: 170px;
-    height: 165px;
+    width: 190px;
+    height: 190px;
     margin: 0 auto;
     position: relative;
 }
 
 .arrows div {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border: 2px solid black;
     border-radius: 50%;
     text-align: center;
-    line-height: 55px;
-    font-size: 35px;
+    line-height: 65px;
+    font-size: 40px;
     box-shadow: 0 0 3px black;
 }
 
