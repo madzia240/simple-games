@@ -5,9 +5,26 @@
     font-family: "Press Start 2P", cursive;
 }
 
+body,
+html {
+    min-height: 100vh;
+}
+
+.alert {
+    padding: 2vh 0;
+    text-align: center;
+}
+
+.alert button {
+    background-color: white;
+    padding: 1vh 1vw;
+    margin: 2vh 4vw 0;
+    border: 2px solid black;
+}
+
 .wrap {
     width: 85%;
-    margin: 5vh auto 0;
+    margin: 2vh auto 0;
 }
 
 .game {
@@ -93,7 +110,7 @@
     }
 
     .second {
-        flex-basis: 40%;
+        flex-basis: 45%;
         padding-left: 10%;
     }
 

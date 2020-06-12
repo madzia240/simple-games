@@ -12,6 +12,7 @@ class Game {
         this.spanGames = document.querySelector('.score span.number');
         this.spanWins = document.querySelector('.score span.win');
         this.spanLosses = document.querySelector('.score span.loss');
+        this.alert = document.querySelector('.alert');
 
         this.render()
 
@@ -34,15 +35,19 @@ class Game {
         this.spanWins.textContent = stats[1];
         this.spanLosses.textContent = stats[2];
 
-        // this.inputBid.value = "";
     }
 
     startGame() {
-        if (this.inputBid.value < 1) return alert('Kwota, którą chcesz grać jest za mała!')
+        this.alert.innerHTML = '';
+        if (this.inputBid.value < 1) {
+            this.alert.innerHTML = `Bid is too small`;
+            return;
+        }
         const bid = Math.floor(this.inputBid.value);
 
         if (!this.wallet.checkCanPlay(bid)) {
-            return alert("masz za mało środków lub podana została nieprawidłowa wartość")
+            this.alert.innerHTML = `You don't have enough money`;
+            return
         }
 
         this.wallet.changeWallet(bid, '-');
@@ -55,6 +60,12 @@ class Game {
         this.stats.addGameToStatistics(win, bid);
 
         this.render(colors, this.wallet.getWalletValue(), win, this.stats.showGameStatistics(), bid, wonMoney)
+
+        if (this.wallet.checkLoose()) {
+            this.alert.innerHTML = `You loose! Again?<br> <button class='yes'>yes</button><button class='no'>no</button>`;
+            document.querySelector('.yes').addEventListener('click', () => location.reload())
+            document.querySelector('.no').addEventListener('click', () => location.href = '../index.html')
+        }
 
     }
 }

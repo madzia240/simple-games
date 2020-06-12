@@ -8,6 +8,9 @@ class Wallet {
             if (_money >= value) return true;
             return false;
         }
+        this.checkLoose = () => {
+            if (_money == 0) return true;
+        }
 
         this.changeWallet = (value, type = "+") => {
             if (typeof value === "number" && !isNaN(value)) {
