@@ -61,7 +61,7 @@ section.panel p.score {
     text-align: center;
     line-height: 65px;
     font-size: 40px;
-    box-shadow: 0 0 3px black;
+    /* box-shadow: 0 0 3px black; */
 }
 
 .arrows div:hover {
