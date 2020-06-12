@@ -14,7 +14,7 @@ html {
 .game {
     display: none;
     position: absolute;
-    top: 45%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -61,4 +61,24 @@ div {
     .turnToLandscape {
         display: none;
     }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+}
+
+footer a {
+    display: inline-block;
+    padding: 1vh;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+footer a:hover {
+    text-decoration: none;
 }
