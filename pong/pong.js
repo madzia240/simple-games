@@ -16,7 +16,7 @@ var startText = "click anywhere to start"
 var paddle1Y = 250;
 var paddle2Y = 250;
 const PADDLE_THICKNESS = 10;
-const PADDLE_HEIGHT = 90;
+const PADDLE_HEIGHT = 70;
 
 var sound = document.getElementById('sound');
 sound.volume = 0.3;
@@ -163,19 +163,19 @@ function drawEverything() {
     colorRect(0, 0, canvas.width, canvas.height, 'black');
     if (showingStartScreen) {
         canvasContext.fillStyle = "white";
-        canvasContext.fillText(startText, 300, 250).fillStyle("white");
+        canvasContext.fillText(startText, 250, 250).fillStyle("white");
     }
     if (showingWinScreen) {
         canvasContext.fillStyle = 'white';
 
         if (player1Score >= WINNING_SCORE) {
 
-            canvasContext.fillText("Left Player Won", 300, 250, );
+            canvasContext.fillText("Left Player Won", 250, 250, );
         } else if (player2Score >= WINNING_SCORE) {
-            canvasContext.fillText("Right Player Won", 300, 250);
+            canvasContext.fillText("Right Player Won", 250, 250);
         }
 
-        canvasContext.fillText("click to continue", 300, 450);
+        canvasContext.fillText("click to continue", 250, 270);
         return;
     }
 
