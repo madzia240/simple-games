@@ -138,7 +138,7 @@ footer a {
     color: white;
 }
 
-@media (max-height: 360px) {
+@media (max-height: 360px) and (orientation:landscape) {
     .wrap {
         flex-direction: column;
     }
