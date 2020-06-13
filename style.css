@@ -12,12 +12,12 @@ html {
 
 .wrap {
     width: 60%;
-    margin: 15vh auto 0;
+    margin: 10vh auto 0;
     text-align: center;
 }
 
 .title {
-    margin-bottom: 10vh;
+    margin-bottom: 5vh;
 }
 
 .games ul {
