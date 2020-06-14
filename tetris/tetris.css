@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Press Start 2P', cursive;
+}
+
+/* turn your phone */
+.turnToLandscape {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+.turnToLandscape p,
+div {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1.5rem;
+}
+
+.turnToLandscape div {
+  margin-top: 3vh;
+  font-size: 5vh;
+  animation: turning 2s infinite linear;
+}
+
+@keyframes turning {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* panel */
+section.panel {
+  height: 5vh;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+section.panel button.start {
+  flex-basis: 25%;
+  padding: 0 5%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5vh;
+  background-color: white;
+  border: 2px solid black;
+}
+
+section.panel p.score {
+  flex-grow: 1;
+  display: inline-block;
+  width: 100%;
+  color: white;
+  line-height: 5vh;
+  text-align: center;
+  font-size: 1.5vh;
+  background-color: #333;
+}
+
+/* game */
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 8vh;
+}
+
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ddd;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+}
+
+.tetromino {
+  background-color: blue;
+}
+
+
+.mini-grid {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ddd;
+}
+
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+
+/* panel arrows */
+.arrows {
+  width: 80%;
+  margin: 5vh auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.arrows div {
+  flex-basis: 20%;
+  border: 2px solid black;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.arrows div i {
+  transform: translateY(-10%);
+}
+
+/* @media (min-width: 768px) {
+  .arrows {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+  }
+} */
+
+@media (min-width: 1024px) {
+  .arrows {
+    display: none;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 480px) {
+  .turnToLandscape {
+    display: block;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .arrows {
+    display: none;
+  }
+}
+
+/* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  font-size: 1.5vh;
+}
+
+footer a {
+  display: inline-block;
+  padding: 1vh;
+  text-decoration: none;
+  color: white;
+  transition: .5s;
+}
+
+footer a:hover {
+  transform: scale(1.1);
+  text-decoration: none;
+  color: white;
+}

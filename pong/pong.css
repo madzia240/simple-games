@@ -69,6 +69,7 @@ footer {
     width: 100%;
     background-color: #333;
     text-align: center;
+    font-size: 1.5vh;
 }
 
 footer a {
@@ -77,6 +78,7 @@ footer a {
     text-decoration: none;
     color: white;
     transition: .5s;
+    font-size: 1.5vh;
 }
 
 footer a:hover {
